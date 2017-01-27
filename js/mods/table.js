@@ -1,10 +1,15 @@
-require(['pie', 'line','bar','update'],function(pie,line,bar,update){
-  var inputData = [
-    ['Reese', 20000],
-    ['Jeremiah', 32000],
-    ['John', 65000],
-    ['Jacob',40000]
-  ];
+require(['pie', 'line','bar'],function(pie,line,bar){
+
+  //update.updateTable();
+  var myTable = document.getElementById('table');
+      myTable.addEventListener('input',function(e){
+        bar.bar(true);
+        line.line(true);
+        pie.pie(true);
+        })
+
+
+
   buttons.addEventListener('click', function(e){
     if(e.target.id == 'line'){
       line.line();
@@ -14,6 +19,7 @@ require(['pie', 'line','bar','update'],function(pie,line,bar,update){
     }
     if(e.target.id == 'pie'){
       pie.pie();
+
     }
   })
 })

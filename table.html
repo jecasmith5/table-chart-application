@@ -10,35 +10,35 @@
   <body>
     <h1>Table-Chart-Application</h1>
 <div class="table">
-    <table contenteditable>
+    <table contenteditable id='table'>
     <tr>
-      <th>Name</th>
-      <td id='names0'>Reese</td>
-      <td id='names1'>Jeremiah</td>
-      <td id='names2'>John</td>
-      <td id='names3'>Jacob</td>
+      <th class='titlecol' contenteditable="false">Task</th>
+      <td>Work</td>
+      <td>Commute</td>
+      <td>Sleep</td>
+      <td>Exercise</td>
 
     </tr>
     <tr>
-      <th class='titlecol'>Salary</th>
-      <td>20000</td>
-      <td>32000</td>
-      <td>65000</td>
-      <td>40000</td>
-
-
+      <th contenteditable="false" class='titlecol'>Hours Per Week</th>
+      <td>24</td>
+      <td>1</td>
+      <td>2</td>
+      <td>50</td>
     </tr>
     </table>
 </div>
 
 <div id='buttons'>
 <button id='line'>Line</button>
-<button id='bar'>bar</button>
-<button id='pie'>pie</button>
+<button id='bar'>Bar</button>
+<button id='pie'>Pie</button>
 </div>
-
+<div id='charts'>
 <div id='myPieChart'></div>
 <div id='myLineChart'></div>
 <div id='myBarChart'></div>
+</div>
+<!-- <footer>Jessica Smith Table/chart application 2016</footer> -->
   </body>
 </html>
