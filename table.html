@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Table-Chart-Application</title>
+    <link href="table.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script data-main="js/mods/table.js" src="js/require.js"></script>
+  </head>
+  <body>
+    <h1>Table-Chart-Application</h1>
+<div class="table">
+    <table contenteditable>
+    <tr>
+      <th>Name</th>
+      <td id='names0'>Reese</td>
+      <td id='names1'>Jeremiah</td>
+      <td id='names2'>John</td>
+      <td id='names3'>Jacob</td>
+
+    </tr>
+    <tr>
+      <th class='titlecol'>Salary</th>
+      <td>20000</td>
+      <td>32000</td>
+      <td>65000</td>
+      <td>40000</td>
+
+
+    </tr>
+    </table>
+</div>
+
+<div id='buttons'>
+<button id='line'>Line</button>
+<button id='bar'>bar</button>
+<button id='pie'>pie</button>
+</div>
+
+<div id='myPieChart'></div>
+<div id='myLineChart'></div>
+<div id='myBarChart'></div>
+  </body>
+</html>
