@@ -3,42 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Table-Chart-Application</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" >
     <link href="table.css" type="text/css" rel="stylesheet"/>
+
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script data-main="js/mods/table.js" src="js/require.js"></script>
+
+    <script data-main="myjs/mods/table.js" src="myjs/require.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   </head>
   <body>
-    <h1>Table-Chart-Application</h1>
+    <h1 class='h1'>Table-Chart-Application</h1>
 <div class="table">
-    <table contenteditable id='table'>
-    <tr>
+    <table contenteditable id='table' class='table-bordered'class='table-responsive'>
+    <tr class= "danger">
       <th class='titlecol' contenteditable="false">Task</th>
-      <td>Work</td>
-      <td>Commute</td>
-      <td>Sleep</td>
-      <td>Exercise</td>
+      <td><input type="text" value="Work"></td>
+      <td><input type="text" value="Commute"></td>
+      <td><input type="text" value="Sleep"></td>
+      <td><input type="text" value="Exercise"></td>
 
     </tr>
     <tr>
       <th contenteditable="false" class='titlecol'>Hours Per Week</th>
-      <td>24</td>
-      <td>1</td>
-      <td>2</td>
-      <td>50</td>
+      <td><input type="number" value="24"></td>
+      <td><input type="number" value="1"></td>
+      <td><input type="number" value="2"></td>
+      <td><input type="number" value="50"></td>
     </tr>
     </table>
 </div>
-
 <div id='buttons'>
 <button id='line'>Line</button>
-<button id='bar'>Bar</button>
 <button id='pie'>Pie</button>
+
+<button id='bar'>Bar</button>
 </div>
 <div id='charts'>
 <div id='myPieChart'></div>
 <div id='myLineChart'></div>
 <div id='myBarChart'></div>
 </div>
-<!-- <footer>Jessica Smith Table/chart application 2016</footer> -->
+<footer >Jessica Smith Table/chart application 2016</footer>
   </body>
 </html>

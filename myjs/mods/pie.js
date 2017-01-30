@@ -7,31 +7,26 @@ return{
 
     function drawChart() {
       // Define the chart to be drawn.
-      var inputData = [
-        ['Hulk', 20],
-        ['Captain America', 10],
-        ['Iron Man', 20],
-        ['Spider Man',50]
-      ];
+
       var data = new google.visualization.DataTable();
-      var row = [];
       var myTable=document.getElementById('table');
-        var td=document.getElementsByTagName('td');
+        var td=document.getElementsByTagName('input');
+
           row1 = [
-            td[0].innerText,
-            parseInt(td[4].innerText)
+            td[0].value,
+            parseInt(td[4].value)
           ];
           row2 = [
-            td[1].innerText,
-            parseInt(td[5].innerText)
+            td[1].value,
+            parseInt(td[5].value)
           ];
           row3 = [
-            td[2].innerText,
-            parseInt(td[6].innerText)
+            td[2].value,
+            parseInt(td[6].value)
           ];
           row4 = [
-            td[3].innerText,
-            parseInt(td[7].innerText)
+            td[3].value,
+            parseInt(td[7].value)
           ];
       data.addColumn('string', 'Element');
       data.addColumn('number', 'Fans');
@@ -44,7 +39,7 @@ return{
 
       // Instantiate and draw the chart.
       var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
-      var options = {'title':'Pie Chart','width':550,'height':400, 'is3D':true};
+      var options = {'title':'Pie Chart','width':550,'height':400, 'is3D':true,colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6']};
       document.getElementById('myBarChart').style.zIndex=0;
       document.getElementById('myPieChart').style.zIndex=1;
       document.getElementById('myLineChart').style.zIndex=0;
