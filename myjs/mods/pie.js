@@ -17,16 +17,16 @@ return{
             parseInt(td[4].value)
           ];
           row2 = [
-            td[1].value,
-            parseInt(td[5].value)
+            td[5].value,
+            parseInt(td[9].value)
           ];
           row3 = [
-            td[2].value,
-            parseInt(td[6].value)
+            td[10].value,
+            parseInt(td[14].value)
           ];
           row4 = [
-            td[3].value,
-            parseInt(td[7].value)
+            td[15].value,
+            parseInt(td[19].value)
           ];
       data.addColumn('string', 'Element');
       data.addColumn('number', 'Fans');
@@ -39,7 +39,7 @@ return{
 
       // Instantiate and draw the chart.
       var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
-      var options = {'title':'Pie Chart','width':550,'height':400, 'is3D':true,colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6']};
+      var options = {'title':'Amount Predicted','width':550,'height':400, 'is3D':true,colors: ['black', 'purple', 'silver', 'blue', '#f6c7b6']};
       document.getElementById('myBarChart').style.zIndex=0;
       document.getElementById('myPieChart').style.zIndex=1;
       document.getElementById('myLineChart').style.zIndex=0;

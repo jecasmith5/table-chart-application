@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Table-Chart-Application</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" >
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
     <link href="table.css" type="text/css" rel="stylesheet"/>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -13,37 +13,71 @@
 
   </head>
   <body>
-    <h1 class='h1'>Table-Chart-Application</h1>
-<div class="table">
-    <table contenteditable id='table' class='table-bordered'class='table-responsive'>
-    <tr class= "danger">
-      <th class='titlecol' contenteditable="false">Task</th>
-      <td><input type="text" value="Work"></td>
-      <td><input type="text" value="Commute"></td>
-      <td><input type="text" value="Sleep"></td>
-      <td><input type="text" value="Exercise"></td>
+    <div class='container'>
+      <div class='jumbotron'>
+    <h1 class='text-center'>Table-Chart-Application</h1>
+    <div class="table table-responsive">
+    <table id='table' class="table">
+    <tr>
+      <th>Name</th>
+      <th>Items Sold</th>
+      <th>$ earned</th>
+      <th>unit cost</th>
+      <th>Amount Predicted</th>
 
     </tr>
     <tr>
-      <th contenteditable="false" class='titlecol'>Hours Per Week</th>
-      <td><input type="number" value="24"></td>
-      <td><input type="number" value="1"></td>
-      <td><input type="number" value="2"></td>
-      <td><input type="number" value="50"></td>
+      <td><input type="text" value="John"></td>
+      <td><input type="number" value="300"></td>
+      <td><input type="number" value="400"></td>
+      <td><input type="number" value="500"></td>
+      <td><input type="number" value="500"></td>
+
+    </tr>
+    <tr>
+      <td><input type="text" value="Robin"></td>
+      <td><input type="number" value="300"></td>
+      <td><input type="number" value="100"></td>
+      <td><input type="number" value="400"></td>
+      <td><input type="number" value="500"></td>
+
+    </tr>
+    <tr>
+      <td><input type="text" value="Richard"></td>
+      <td><input type="number" value="800"></td>
+      <td><input type="number" value="300"></td>
+      <td><input type="number" value="500"></td>
+      <td><input type="number" value="500"></td>
+
+    </tr>
+    <tr>
+      <td><input type="text" value="Jeremiah"></td>
+      <td><input type="number" value="300"></td>
+      <td><input type="number" value="500"></td>
+      <td><input type="number" value="200"></td>
+      <td><input type="number" value="500"></td>
+
     </tr>
     </table>
+  </div>
 </div>
 <div id='buttons'>
-<button id='line'>Line</button>
-<button id='pie'>Pie</button>
-
-<button id='bar'>Bar</button>
+  <button id='line'class="btn btn-primary btn-md">Line</button>
+  <button id='pie'class="btn btn-primary btn-md">Pie</button>
+  <button id='bar'class="btn btn-primary btn-md">Bar</button>
 </div>
-<div id='charts'>
-<div id='myPieChart'></div>
-<div id='myLineChart'></div>
-<div id='myBarChart'></div>
+<div class='row'>
+  <div class="col-xs-3"></div>
+      <div id='charts' class='well'>
+        <div class='chartPos'>
+        <div id='myPieChart' class="table-responsive"></div>
+        <div id='myLineChart' class="table-responsive"></div>
+        <div id='myBarChart' class="table-responsive"></div>
+      </div>
+    </div>
+  </div>
 </div>
-<footer >Jessica Smith Table/chart application 2016</footer>
+  <footer class='navbar navbar-default navbar-fixed-bottom'>Jessica Smith Table/chart application 2016</footer>
+</div>
   </body>
 </html>

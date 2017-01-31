@@ -1,4 +1,5 @@
 require(['pie','line','bar'],function(pie,line,bar){
+  bar.bar();
   var myTable=document.getElementById('table');
   var td=document.getElementsByTagName('input');
   if(isNaN(td[4].value || td[5].value || td[6].value || td[7].value )){
